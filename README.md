@@ -5,6 +5,10 @@ Bem vindo ao meu segundo projeto de criação de portfólio. A primeira versão 
 
 Este desafio foi direcionado a nós alunos que estamos dando os primeiros passos na área de programação Front End e queremos colocar à prova nossos conhecimentos adquiridos até o momento!
 
+#### Acesse a página web:
+* Navegue pelo portfólio clicando [aqui ](https://novo-portfolio-omega.vercel.app/).
+
+
 ![image](https://github.com/user-attachments/assets/66087b5a-f130-4f79-a42b-f19bb1b96735)
 ![image](https://github.com/user-attachments/assets/2c25f55c-8fd8-44d6-a28f-3f22f4e8870a)
 ![image](https://github.com/user-attachments/assets/199ff8a8-15aa-457d-8c62-44c1b3e6b660)
