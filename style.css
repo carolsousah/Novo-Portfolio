@@ -1,0 +1,517 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 150px 0 150px;
+    gap: 12px;
+    margin-bottom: 32px; /* Espaçamento abaixo dessa seção */
+    font-size: 16px;
+    background-color: #fff;
+}
+
+
+.cabecalho__logo {
+width: 35px;
+height: 35px;
+}
+
+
+.cabecalho__titulo {
+    font-size: 16px;
+    margin-right: auto; /*deixou meu nome a esquerda */
+    color:#464646;
+}
+
+
+.navegacao__lista {
+    display: flex;
+}
+
+
+.navegacao__elemento a {
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navegacao__elemento a:hover {
+    background-color: rgb(241, 172, 172);
+}
+
+
+.redes {
+    display: flex;
+}
+
+
+.redes__elemento a {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+.redes__elemento a:hover{
+    background-color: rgb(241, 172, 172);
+}
+
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    margin-bottom: 40px; /* Espaçamento abaixo dessa seção */
+}
+
+
+.apresentacao__foto{
+    order: 2; /* Coloca a imagem à direita */
+    margin-left:10px; /* Adiciona espaço entre o texto e a imagem */
+    width: 250px;
+    border-radius: 250px;
+}
+
+
+.apresentacao__container{
+    display: flex;
+    order: 1; /* Mantém o texto à esquerda */
+}
+
+
+.apresentacao__titulo{
+    font-size: 30px;
+    align-items: center;
+    margin-bottom: 0px; /*espaçamento entre o titulo e o subtitulo*/
+    color:#464646;
+}
+
+
+.apresentacao__subtitulo{
+    margin-top: 10px; /*espaçamento entre o subtitulo e o titulo */
+}
+
+
+.redes__elemento{
+    display: flex;
+}
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px 20px 150px;
+    margin-bottom: 40px; /* Espaçamento abaixo dessa seção */
+    background-color: #f0f8ff;
+}
+
+
+.sobre-mim__titulo{
+    color:#464646;
+}
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades{
+    padding: 0 150px 0 150px;
+    margin-bottom: 40px; /* Espaçamento abaixo dessa seção */
+    text-align: center; /* Adiciona centralização do título */
+    color:#464646;
+}
+
+
+.habilidades__lista{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.habilidades__elemento{
+    display: flex; /* Usado para centralizar verticalmente */
+    flex-direction: column; /* Empilha o ícone e o texto verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 10px 20px; /* Espaçamento entre os itens */
+}
+
+
+.habilidades__icone{
+    width: 40px; /* Largura fixa */
+    height: 40px; /* Altura fixa */
+}
+
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies{
+    padding: 0 150px 0 150px;
+    margin-bottom: 40px; /* Espaçamento abaixo dessa seção */
+    text-align: center; /* Adiciona centralização do título */
+    color:#464646;
+}
+
+
+.hobbies__lista{
+    display: flex; /* deixa os elementos em linha */
+    flex-wrap: nowrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+    justify-content: space-evenly; /* Espaçamento uniforme entre os elementos */
+    padding: 0;
+    margin: 0;
+}
+
+
+.hobbies__elemento {
+    display: flex; /* Usado para centralizar verticalmente */
+    flex-direction: column; /* Empilha o ícone e o texto verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 10px 20px; /* Espaçamento entre os itens */
+}
+
+
+.hobbies__icone{
+    width: 40px; /* Largura fixa */
+    height: 40px; /* Altura fixa */
+}
+
+
+/*-------------------------- Seção de Formação Acadêmica ---------------------------*/
+.formacao{
+    padding: 10px 150px 0 150px;
+    margin-bottom: 40px; /* Espaçamento abaixo dessa seção */
+    text-align: center; /* Adiciona centralização do título */
+    color:#464646;
+    background-color: #f0f8ff; /* Cor de fundo da seção */
+
+}
+
+
+.formacao__lista{
+    display: flex; /* deixa os elementos em linha */
+    justify-content: center; /* Espaçamento igual entre os itens */
+    flex-wrap: nowrap; /* Permite quebra de linha em telas menores */
+    gap: 5px; /* Espaçamento entre os itens */
+    list-style: none; /* Remove marcadores padrão da lista */
+    padding: 0; /* Remove padding padrão */
+    margin: 0 auto; /* Centraliza a lista */
+}
+
+
+.formacao__elemento{
+    text-align: center; /* Centraliza os textos */
+    max-width: 300%; /* Largura fixa para manter o padrão do Figma */
+    margin: 0 15px; /* Centraliza o container horizontalmente */
+    flex: 1; /* Permite que o item ocupe o espaço restante disponível */
+    min-width: 280px; /* Garante que o item tenha largura mínima em telas menores */
+}
+
+
+/* Quadrado branco para o ícone */
+.formacao__icone-container {
+    width: 280px; /* Largura fixa */
+    height: 240px; /* Altura fixa */
+    background-color: #fff; /* Fundo branco */
+    display: flex; /* Alinhamento do ícone */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid #ddd; /* Borda opcional */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 0 auto 5px; /* Centraliza dentro do elemento */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+
+.formacao__icone{
+    max-width: 100%; /* Largura máxima */
+    max-height: 100%; /* Altura máxima */
+    object-fit: contain; /* Mantém proporções sem distorções */
+    display: inline; /* Remove espaçamento extra causado por elementos inline */
+}
+
+
+.formacao__nome {
+    font-family: 'Raleway', sans-serif; /* Definir a fonte Raleway */
+    font-size: 16px; /* Ajuste o tamanho da fonte */
+    font-weight: bold; /* Destaque para o nome do curso */
+    line-height: 1.2; /* Ajuste o espaçamento entre as linhas para um espaço menor */
+    text-align: center; /* Alinhar o texto ao meio */
+    color: #464646;
+    margin-bottom: 5px; /* Diminui o espaço abaixo do nome */
+}
+
+
+.formacao__detalhe {
+    font-size: 13px;
+    color: #666; /* Cor mais clara para detalhes */
+    margin: 0; /* Remove margens adicionais */
+    margin-bottom: 30px; /* Diminui o espaço abaixo do nome */
+}
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+.projetos{
+    padding: 0 150px 0 150px;
+    margin-bottom: 40px; /* Espaçamento abaixo dessa seção */
+    color:#464646;
+    text-align: center; /* Adiciona centralização do título */
+}
+
+
+.projetos__titulo {
+    font-size: 24px; /* Ajuste conforme necessário */
+    font-weight: bold;
+    color: #464646;
+    margin-bottom: 2px; /* Espaço ajustado entre o título e a primeira imagem */
+    text-align: center; /* Centraliza o título */
+}
+
+
+.imagem{
+    max-width: 65%; /* Largura máxima */
+    max-height: 100%; /* Altura máxima */
+    object-fit: contain; /* Mantém proporções sem distorções */
+    display: inline; /* Remove espaçamento extra causado por elementos inline */
+    margin-top: 20px; /* Diminui o espaço abaixo da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+
+.projeto__nome {
+    font-family: 'Raleway', sans-serif; /* Definir a fonte Raleway */
+    font-size: 18px; /* Ajuste o tamanho da fonte */
+    font-weight: bold; /* Destaque para o nome do curso */
+    line-height: 1.2; /* Ajuste o espaçamento entre as linhas para um espaço menor */
+    color: #464646;
+    margin-bottom: 5px; /* Espaço entre o nome e a descrição */
+    margin-top: 5px; /* Espaçamento acima do nome do projeto */
+}
+
+
+.projeto__descricao {
+    font-size: 14px;
+    color: #666; /* Cor mais clara para detalhes */
+    margin: 0; /* Remove margens adicionais */
+    margin-bottom: 5px; /* Espaço entre o nome e a descrição */
+}
+
+
+button{
+    font-family: 'Raleway', sans-serif; /* Definir a fonte Raleway */
+    font-size: 12px; /* Ajuste o tamanho da fonte */
+    font-weight: 450; /* Destaque para o nome do curso */
+    line-height: 1.2; /* Ajuste o espaçamento entre as linhas para um espaço menor */
+    color: #666;
+    border: 1.5px solid #666; /* Define a espessura da borda */
+    Width: 106px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Espaço entre o nome e a descrição */
+}
+
+
+button:hover {
+    background-color: rgb(241, 172, 172); /* Cor de fundo ao passar o mouse */
+    border-color: rgb(241, 172, 172); /* Cor da borda no hover */
+}
+
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: #f0f8ff; /* Cor de fundo da seção */
+    font-family: 'Raleway', sans-serif; /* Definir a fonte Raleway */
+    color: #464646;
+}
+
+
+.contato h2{
+    margin-bottom: 15px; /* Diminui a margem inferior do título */
+    text-align: center; /* Centraliza o título * NAO EXISTIA */
+}
+
+
+.contato p{
+    color: #666;
+    font-size: 16px;
+    text-align: center; /* Centraliza o texto NAO EXISTIA*/
+    margin: 0; /* Remove margens extras NAO EXISTIA */
+    margin-bottom: 10px; /* Dá espaço entre o texto e os elementos seguintes NAO EXISTIA */
+}
+
+
+.contato__conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto; /* Centraliza o container */
+}
+
+
+.contato__imagem {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+}
+
+
+.contato__imagem img {
+    width: 350px;
+    height: 430px;
+    object-fit: cover;
+}
+
+
+.contato__formulario {
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+
+.contato__formulario label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.contato__formulario input,
+.contato__formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.contato__formulario button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.contato__formulario button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ------------------------------ Rodapé ---------------------------------------*/
+footer{
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    padding-top: 6px; /* Espaço no topo */
+    padding-bottom: 6px; /* Espaço abaixo */
+    background-color: #fff;
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    text-align: center;
+}
+
+
+footer p {
+    font-family: 'Raleway', sans-serif; /* Definir a fonte Raleway */
+    font-size: 14px; /* Ajuste o tamanho da fonte */
+    font-weight: bold; /* Destaque para o nome do curso */
+    line-height: 1.2; /* Ajuste o espaçamento entre as linhas para um espaço menor */
+    text-align: center; /* Alinhar o texto ao meio */
+    color: #464646;
+    margin-bottom: 5px; /* Remover o margin-bottom aqui */
+}
+
+
+.rodape__data {
+    font-size: 14px;
+    color: #666; /* Cor mais clara para detalhes */
+    margin-top: 0; /* Remover o margin-top */
+    margin-bottom: 8px; /* Remover margens para manter o espaço adequado */
+}
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas menores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 16px;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+
+    .contato__conteudo {
+        grid-template-columns: 1fr; /* Coluna única */
+}
+
+    .contato__imagem img {
+        margin-bottom: 20px;
+}
+
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
