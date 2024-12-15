@@ -1,5 +1,5 @@
 # Challenge Portfólio
-###### Curso: Formação Iniciante em Programação da Alura + Oracle.
+###### Curso: Formação Front-end da Alura + Oracle.
 Bem vindo ao meu segundo projeto de criação de portfólio. A primeira versão realizada meses atrás está disponível nos repositórios anteriores para que confiram a evolução.
 
 
